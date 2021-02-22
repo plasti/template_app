@@ -1,0 +1,106 @@
+// Colores
+@p:	#4b4baf;
+@s:	#001f26;
+@e: #eaeaea;
+@f: #fff;
+@1: #111;
+@fondo: #f7f6fd;
+
+// Break points
+@bp1 	 : 1024px;
+@bp2 	 : 768px;
+@bp3 	 : 480px;
+
+// Rutas
+@img: '../img/';
+@font: '../font/';
+
+// Fuente
+@fuente-comun  : 'Nunito', sans-serif;
+@fuenteEspecial  : 'Nunito', sans-serif;
+@fuente-iconos : 'icomoon';
+@font-size : 18px;
+
+
+//++++++++++++++++++++++++++++++++++++++++++++//
+// ::::::::   Reset  
+//++++++++++++++++++++++++++++++++++++++++++++//
+* {font-family: @fuente-comun;}
+strong {font-weight: 600;}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%;
+	vertical-align : baseline; background : transparent; font-weight : normal;
+	line-height: normal;
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	-ms-box-sizing : border-box;
+	box-sizing : border-box;
+}
+a {outline : none;}
+table {border-collapse : collapse; border-spacing : 0;}
+img {border : 0; vertical-align : bottom;}
+del,ins {text-decoration : none;}
+abbr,acronym {border:0; font-variant:normal;}
+ul { padding-left: 20px; }
+h2 {
+	font-weight: 600;
+}
+input,button,textarea,select,optgroup,option {font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit;}
+input,button,textarea,select {font-size:100%;}
+
+.group:before, .group:after {content:""; display:table;}
+.group:after {clear:both;}
+.ie6 .group {zoom:1;}
+.ie7 .group {zoom:1;}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++//
+// ::::::::   Paginación
+//++++++++++++++++++++++++++++++++++++++++++++//
+nav {
+	text-align: center;
+}
+
+.pagination {
+	list-style: none;
+	justify-content: center;
+	margin: 20px auto;
+	padding: 0;
+	li {
+		display: inline-block;
+		&.disabled span {
+			color: @p;
+		}
+		&.active span {
+			background-color: @p;
+			color: @f;
+			border-color: @p;
+		}
+	}
+	a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		padding: 0;
+		text-align: center;
+		line-height: 35px;
+		border: 1px solid @p;
+		border-radius: 50px;
+		.border-box;
+		// font-weight: 600;
+		.hover;
+	}
+	span {
+		display: block;
+		width: 35px;
+		height: 35px;
+		padding: 0;
+		text-align: center;
+		line-height: 35px;
+		border: 1px solid @p;
+		border-radius: 50px;
+		.border-box;
+		// font-weight: 600;
+	}
+}
