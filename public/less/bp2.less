@@ -1,0 +1,207 @@
+// +++  Menu   +++  //
+	
+// +++  Fin Menu   +++  //
+html {
+	font-size: @font-size - 2;
+}
+
+.container-logo {
+	width: 50%;
+	margin-bottom: 0px;
+	margin-top: 25px;
+}
+
+.widget-ayuda {
+	.font-size(0);
+	padding: 10px;
+	.border-radius(50%);
+	&::before {
+		.font-size(1);
+	}
+}
+
+.marca {
+	.font-size(0) !important;
+	a {
+		.font-size(0.55) !important;
+	}
+}
+
+.header-agencia {
+	flex-direction: column;
+	.item-header {
+		width: 100%;
+	}
+	.item-header:first-child {
+		border-right: none;
+	}
+}
+
+.indicadores-venta {
+	flex-direction: column;
+	.ind {
+		width: 100%;
+		margin: 5px auto;
+	}
+}
+.hide-point {
+	display: none !important;
+}
+.programados ul li {
+	grid-template-columns: 35% 1fr 1fr 1fr !important;
+}
+.programados .header-ul .titles {
+	grid-template-columns: 35% 1fr 1fr 1fr !important;
+}
+.programados .header-ul {
+	.buscador {
+		text-align: center;
+		input {
+			width: 70%;
+		}
+	} 
+}
+.form-user .colum, .form-user .colum.only {
+	width: 100%;
+}
+//++++++++++++++++++++++++++++++++++++++++++++//
+// ::::::::   <<Login
+//++++++++++++++++++++++++++++++++++++++++++++//
+.form-login {	
+	display: block !important;
+	height: auto !important;
+	.container-form-login {
+		display: block;
+		padding: 30px 0;
+		.colum-login {
+			display: inline-block;
+			width: 70%;
+			margin: 10px auto;
+		}
+	}
+}
+
+
+
+.menu-ppl {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	background-color: fade(@bg-oscuro,70);
+	text-align: center;
+	nav::before {
+		display: none;
+	}
+	ul {
+		display: table;
+		margin: 0 auto;
+	}
+	li {
+		margin: 0 1px;
+	}
+	nav a {
+		text-transform: none;
+		min-width: auto;
+		min-width: initial;
+		width: 80px;
+	}
+	nav a::before {
+		display: block;
+		margin-right: 0;
+	}
+	ul.other-view {
+		padding: 0;
+		position: fixed;
+		top: 5px;
+		left: 10px;
+		li {
+			display: block;
+			margin-bottom: 2px;
+			&::before {
+				display: none;
+			}
+		}
+		a.btn {
+			display: block;
+			//width: 50px;
+			padding: 5px 10px;
+			text-transform: none;
+		}
+	}
+}
+
+
+main {
+	> section > h1 {
+		.font-size(1.8);
+	}
+}
+
+main.partidos {
+	aside {
+		display: none;
+	}
+}
+
+article {
+	.my-colum(12, 20px);
+}
+aside {
+	.my-colum(10, 20px);
+}
+
+.head-position {
+	form {
+		button {
+			height: 41px;
+		}
+	}
+}
+
+.data-user.perfil {
+	.contiene-avatar {
+		.my-colum(5, 10px);
+		max-width: 230px;
+		margin-top: -20px;
+	}
+}
+	.datos-perfil {
+		.my-colum(12, 10px);
+		> h2 {
+			display: block;
+			margin-top: 40px;
+			margin-bottom: 0;
+			padding-right: 10px;
+			border-bottom: 1px solid @borde-claro;
+		}
+		> h3 {
+			display: block;
+			margin-bottom: 0;
+			padding-left: 0;
+			border-left: none;
+			color: @primario;
+		}
+		> p {
+			margin-bottom: 30px;
+		}
+	}
+
+
+.minialert {
+	text-align: center;
+	width: 90%;
+	padding: 0 10px;
+}
+
+
+.codes-list {
+	td, th, caption {
+		padding: 6px 10px;
+	}
+}
+
