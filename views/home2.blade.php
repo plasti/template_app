@@ -1,0 +1,1 @@
+<h2 class="title icon-home">Bienvenido</h2>
